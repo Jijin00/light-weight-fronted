@@ -1,0 +1,287 @@
+.icons{
+ font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.u1{
+   background-color: aliceblue;
+}
+#i1{
+    size: -10em;
+}
+#l1{
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.b1{
+    /* CSS */
+    position:relative;
+    left: 80px;
+    background-color: rgba(51, 51, 51, 0.05);
+    border-radius: 8px;
+    border-width: 0;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+
+}
+
+.b1 span{
+    display: none;
+}
+
+ .b1:hover{
+    
+    padding-right: 24px;
+    padding-left:8px;
+    transition: 0.5s;
+ 
+} 
+ .b1:hover span{
+    display: inline;
+ }
+
+/* .b1:hover:after{
+    opacity: 1;
+    right: 10px;
+} */
+
+
+      
+
+.b2{
+    /* CSS */
+    position:relative;
+    right: 100px;
+    background-color: rgba(51, 51, 51, 0.05);
+    border-radius: 8px;
+    border-width: 0;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+
+}
+.b2 span{
+    display: none;
+}
+
+
+.b2:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    transition: 0.5s;
+ 
+} 
+.b2:hover span{
+    display: inline;
+ }
+
+.b3{
+    /* CSS */
+    position:relative;
+    right: 280px;
+    background-color: rgba(51, 51, 51, 0.05);
+    border-radius: 8px;
+    border-width: 0;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+
+}
+.b3 span{
+    display: none;
+}
+
+
+.b3:hover{
+    
+    padding-right: 24px;
+    padding-left:8px;
+    transition: 0.5s;
+ 
+} 
+.b3:hover span{
+    display: inline;
+ }
+
+
+.a1{
+    position: absolute;
+    right:70px;
+}
+.a2{
+    position: absolute;
+    right:-100px;
+}
+
+ .nav1{
+    position: static;
+} 
+
+
+.nav2{
+
+    position:sticky ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+#i3{
+    height: 500px;
+    width: 1080px;
+}
+
+#i4{
+    height: 500px;
+    width: 1080px;
+}
+
+#g1{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
+}
+
+#g2{
+  
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.raw {
+    transition:0.6s;
+    border: none;
+     /* boxshadow */
+     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }
+
+.raw:hover{
+    transform: scale(1.1);
+}
+
+#g3{
+  
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}  
+
+.raw1 {
+    transition:0.6s;
+    border: none;
+     /* boxshadow */
+     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }
+
+.raw1:hover{
+    transform: scale(1.1);
+}
+
+.raw2{
+    transition:0.6s;
+    border: none;
+     /* boxshadow */
+     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }
+
+.raw2:hover{
+    transform: scale(1.1);
+}
+
+.btn4{
+    background-color: #28282B;
+    border-color: #28282B;
+    color:#fff ;
+}
+.btn4:hover{
+    background-color: #fff;
+    color:#28282B;
+    border-color: #28282B;
+
+}
+
+
+.btn5{
+    background-color: #28282B;
+    border-color: #28282B;
+    color:#fff ;
+}
+.btn5:hover{
+    background-color: #fff;
+    color:#28282B;
+    border-color: #28282B;
+
+}
+
+
+.btn6{
+    background-color: #28282B;
+    border-color: #28282B;
+    color:#fff ;
+}
+.btn6:hover{
+    background-color: #fff;
+    color:#28282B;
+    border-color: #28282B;
+
+}
+#g1{
+    background-image: url("/assets/gym8.jpg");
+    background-size: cover;
+    height:500px;
+}
+
+ #h1{
+    color: black;
+    text-align: center;
+    padding-top: 200px;
+}
+#h2{
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+ #h3{
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}

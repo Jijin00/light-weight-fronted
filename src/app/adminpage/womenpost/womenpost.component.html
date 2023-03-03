@@ -1,0 +1,23 @@
+<div class="div1"  >
+    <form [formGroup]="postform">
+        <div class="mb-3">
+          <label  >Name</label>
+          <input type="text" formControlName="Name"  class="form-control" >
+        </div>
+        <div class="mb-3">
+          <label >price </label>
+          <input type="text" formControlName="price" class="form-control" >
+        </div>
+        <div class="mb-3">
+          <label >description </label>
+          <input type="text" formControlName="description"   class="form-control" id="">
+        </div>
+        <div class="mb-3">
+    
+          <label >pics </label>
+          <input type="file" (change)="image($event)"  class="form-control" id="">
+        </div>
+        
+        <button type="submit" (click)="post()" class="btn btn-dark">post</button>
+      </form>
+    </div>

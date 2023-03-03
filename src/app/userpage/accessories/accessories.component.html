@@ -1,0 +1,40 @@
+
+<nav class="navbar fixed-top bg-body-tertiary nav2 ">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-dumbbell"></i>
+      </a>
+      <button  class="b1" routerLink="/men"> Men &ensp;<span ><i class="fa-solid fa-angles-right"></i></span></button>
+      <button   class="b2" routerLink="/women" >Women &ensp;<span ><i class="fa-solid fa-angles-right"></i></span></button>
+      <button   class="b3" routerLink="/accessories">Accessories &ensp;<span ><i class="fa-solid fa-angles-right"></i></span></button>
+
+    
+    </div>
+    
+    <a class="a1"  routerLink="/login"><i  style="color: black;" class="fa-solid fa-person"></i></a>
+   
+  </nav>
+
+  <div data-aos="fade-down">
+  <div id="g11" >
+    <i><h1 class="top">Do It... or Do not ...</h1></i>
+    
+    <!-- <a href="#"><img  id="i13" src="assets\gym6.jpg"></a> -->
+  </div>
+</div>
+ 
+  <div class="row mt-5"  >
+    <div class="card col-lg-5 ms-4 raw " style="width: 12rem; height: 21.5em;margin-bottom: 40px;"   *ngFor="let item of datas">
+      <div   >
+      <img style="height: 10em;width: 10em; object-fit: cover;" class="card-img-top mt-1" src="{{item.pics}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{item.Name}}</h5>
+        <p class="card-text">₹{{item.price}}</p>
+        <p class="card-text">{{item.description}}</p>
+        <a href="#" class="btn btn1" [routerLink]="['/accsingle/',item.id]">BUY</a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+

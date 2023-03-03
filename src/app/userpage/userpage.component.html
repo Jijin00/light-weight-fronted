@@ -1,0 +1,182 @@
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg  nav1" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-weight-scale"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active icons" aria-current="page" href="#">
+               Reach us:<i style="padding-left:10px ;" class="fa-brands fa-facebook ">
+                    <i style="padding-left: 10px;" class="fa-brands fa-instagram"></i>    
+                       <i  style="padding-left: 10px;" class="fa-brands fa-tiktok"></i>
+                    <i style="padding-left: 10px;" class="fa-brands fa-youtube"></i>
+
+            </i></a>
+            
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PLANS
+            </a>
+            <ul class="dropdown-menu bg-secondary u1 " >
+              <li><a class="dropdown-item" href="#">Personal Trainer</a></li>
+              <li><a class="dropdown-item" href="#">Yoga</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Online Course</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a id="l1"  class="nav-link text-center" style="color:rgb(255, 255, 255); padding-left: 90px;">LIGHT WEIGHT <i class="fa-solid fa-dumbbell"></i></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input style="width: 10em;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button  style="width: 3em;" class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass-dollar"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--------second navbar----------> 
+
+  <nav class="navbar fixed-top bg-body-tertiary nav2 ">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-dumbbell"></i>
+      </a>
+      <button  class="b1" routerLink="/men"> Men &ensp;<span ><i class="fa-solid fa-angles-right"></i></span></button>
+      <button   class="b2" routerLink="/women">Women &ensp;<span ><i class="fa-solid fa-angles-right"></i></span></button>
+      <button   class="b3" routerLink="/accessories"  >Accessories &ensp;<span ><i class="fa-solid fa-angles-right"></i></span></button>
+
+    
+    </div>
+    
+    <a class="a1"  routerLink="/login"><i  style="color: black;" class="fa-solid fa-person"></i></a>
+
+  </nav>
+
+
+
+  <div data-aos="fade-left"     data-aos-anchor="#example-anchor"     data-aos-offset="500"     data-aos-duration="500">
+  <div id="g1" >
+    <h1 id="h1"> Everything </h1>
+    <h1 id="h2"> you </h1>
+    <h1 id="h3"> Need</h1>
+  </div>
+</div>
+
+
+  <div class="row my-5 " >
+    <div class="card col-lg-5 ms-4 raw " style="width: 12rem; height: 21.5em;"  *ngFor="let item of datas| slice:0:5 ; let i = index" >
+      <div  >
+      <img style="height: 10em;width: 10em; object-fit: cover;" class="card-img-top mt-1" src="{{item.pics}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{item.Name}}</h5>
+        <p class="card-text">{{item.description}}</p>
+        <p class="card-text">₹{{item.price}}</p>
+        <a href="#" class="btn btn4" [routerLink]="['/mensingle/',item.id]">BUY</a>
+      </div>
+    </div>
+    </div>
+  </div> 
+
+
+  
+  <div id="g2">
+    <a href="#"><img  id="i4" src="assets\gym7.jpg"></a>
+  </div>
+
+ 
+  <div class="row my-5 " >
+    <div class="card col-lg-5 ms-4 raw1 " style="width: 12rem; height: 21.5em;"  *ngFor="let item of values | slice:3:8  ; let i = index" >
+      <div>
+      <img style="height: 10em;width: 10em; object-fit: cover;" class="card-img-top mt-1" src="{{item.pics}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{item.Name}}</h5>
+        <p class="card-text">{{item.description}}</p>
+        <p class="card-text">₹{{item.price}}</p>
+        <a href="#" class="btn btn5" [routerLink]="['/womensingle/',item.id]">BUY</a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div id="g3">
+    <a href="#"><img  id="i4" src="assets\gym1.jpg"></a>
+  </div>
+
+  <div class="row my-5 " >
+    <div class="card col-lg-5 ms-4 raw2 " style="width: 12rem; height: 21.5em;"  *ngFor="let item of items | slice:1:6 ; let i = index" >
+      <div>
+      <img style="height: 10em;width: 10em; object-fit: cover;" class="card-img-top mt-1" src="{{item.pics}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{item.Name}}</h5>
+        <p class="card-text">{{item.description}}</p>
+        <p class="card-text">₹{{item.price}}</p>
+        <a href="#" class="btn btn6" [routerLink]="['/accsingle/',item.id]">BUY</a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">LIGHT WEIGHT</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+<router-outlet></router-outlet>
+
+
+
+
+
+

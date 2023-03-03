@@ -1,0 +1,14 @@
+
+<div class="row my-5 " >
+    <div class="card col-lg-5 ms-4 raw2 " style="width: 12rem; height: 21.5em;"  *ngFor="let item of data let i = index" >
+      <div>
+      <img style="height: 10em;width: 10em; object-fit: cover;" class="card-img-top mt-1" src="{{item.pics}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{item.Name}}</h5>
+        <p class="card-text">{{item.description}}</p>
+        <p class="card-text">₹{{item.price}}</p>
+        <button  class="btn btn-dark" (click)="delete(item.id)">delete</button>
+      </div>
+    </div>
+    </div>
+  </div>
